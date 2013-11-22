@@ -11,10 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131122223113) do
+ActiveRecord::Schema.define(version: 20131122224333) do
 
   create_table "leagues", force: true do |t|
     t.string "leaguename"
+  end
+
+  create_table "politicians", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "nickname"
+    t.string   "middle_name"
+    t.string   "suffix"
+    t.string   "twitter_id"
+    t.string   "party"
+    t.string   "gender"
+    t.string   "state"
+    t.string   "title"
+    t.string   "chamber"
+    t.string   "bioguide_id"
+    t.integer  "district"
+    t.integer  "senate_class"
+    t.boolean  "in_office"
+    t.date     "birthday"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "teams", force: true do |t|
